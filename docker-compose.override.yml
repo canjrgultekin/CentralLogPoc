@@ -1,0 +1,19 @@
+# Sadece local dev ortamı için override'lar.
+# docker-compose up yaptığında bu dosya otomatik okunur.
+
+services:
+  api:
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+
+  gateway:
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+
+  orderservice:
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+
+  inventoryservice:
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
